@@ -5,7 +5,14 @@
 
 <p>
 	<% @armours.each do |armour| %>
-		<li><%=  link_to armour.name, singleArmour_path(armour) %></li>
+		<li><%=  link_to armour.name, singleArmour_path(armour) %> </li>
+
+		<% if armour.image.present? %>
+			<li><%= image_tag armour.image.thumb.url %></li>
+		<% end %>
+
+		<li>Price: <%= armour.price %> Strange Coins</li>
+		<br />
 	<% end %>
 </p>
 

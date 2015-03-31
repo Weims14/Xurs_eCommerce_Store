@@ -1,5 +1,7 @@
 class StoreController < ApplicationController
   def index
+    @armours = Armour.all
+    @weapons = Weapon.all
   end
 
   def armour

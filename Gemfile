@@ -27,6 +27,10 @@ gem 'coffee-script-source', '1.8.0'
 
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
+
+gem 'carrierwave'
+
+gem 'mini_magick'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

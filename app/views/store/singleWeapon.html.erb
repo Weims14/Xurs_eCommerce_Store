@@ -1,8 +1,13 @@
 <h2>Weapon Info</h2>
 
-<nav><%= link_to "Home", root_path %> | <%= link_to "Weapons", weapon_path %> | <%= link_to "Armour", armour_path %></nav>
+<nav><%= link_to "Home", root_path %> | <%= link_to "Weapons", weapon_path %> | <%= link_to "Armour", armour_path %> | <%= link_to "Search", search_path %></nav>
+<br />
 
 <p>Name: <%= @weapons.name %> </p>
+
+<p><% if @weapons.image.present? %>
+		<li><%= image_tag @weapons.image.medium.url %></li>
+	<% end %></p>
 
 <p>Bio: <%= @weapons.bio %> </p> 
 
