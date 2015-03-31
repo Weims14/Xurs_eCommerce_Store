@@ -1,4 +1,12 @@
 <h1>Xur's Agent of the Nine Exotic Items Electronic Store</h1>
 <h2>Armour Page</h2>
 
-<nav><%= link_to "Home", root_path %> | <%= link_to "Weapons", weapon_path %></nav>
+<nav><%= link_to "Home", root_path %> | <%= link_to "Weapons", weapon_path %> | <%= link_to "Search", search_path %></nav>
+
+<p>
+	<% @armours.each do |armour| %>
+		<li><%=  link_to armour.name, singleArmour_path(armour) %></li>
+	<% end %>
+</p>
+
+<h6><%= link_to "Info", info_path %></h6>

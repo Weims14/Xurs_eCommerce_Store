@@ -1,0 +1,19 @@
+<h1>About Us!!!</h1>
+
+<p>
+	<% @infos.each do |info| %>
+		<li>About Us: <%= info.about %></li>
+	<% end %>
+</p>
+
+<h2>Contact Us!!!!</h2>
+
+<p>
+	<% @infos.each do |info| %>
+		<li>Our Email: <%= info.email %></li>
+		<li>Our Info: <%= info.number %></li>
+	<% end %>
+</p>
+
+
+<nav><%= link_to "Home", root_path %> | <%= link_to "Armour", armour_path %> | <%= link_to "Search", search_path %> </nav>

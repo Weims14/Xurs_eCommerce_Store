@@ -1,0 +1,11 @@
+<h2>Weapon Info</h2>
+
+<nav><%= link_to "Home", root_path %> | <%= link_to "Weapons", weapon_path %> | <%= link_to "Armour", armour_path %></nav>
+
+<p>Name: <%= @weapons.name %> </p>
+
+<p>Bio: <%= @weapons.bio %> </p> 
+
+<p>Price: <%= @weapons.price %> </p>
+
+<h6><%= link_to "Info", info_path %></h6>
